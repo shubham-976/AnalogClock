@@ -1,0 +1,43 @@
+#clockcontainer
+{
+    position: relative;                 /*Relative (parent container)*/
+    /* border: 1px solid red; */
+    margin:auto;
+    height: 40vw;
+    width: 40vw;
+    background-image: url('Clock.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#hour, #minute, #second
+{
+    position: absolute;                    /*Absolute all three child containers, so that they get positions w.r.t parent container(which is set relative).*/
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;            /*to rotate these hands about bottom (otherwise they will rotate about therir own center)*/
+}
+#hour
+{
+    width: 1.7%;   /*0.8*//*1.7*/
+    height: 23.8%;
+    top: 25%;
+    left: 50.1%;
+    /* display: none; */
+}
+#minute
+{
+    width: 1.1%;    /*0.8*//*0.9*/
+    height: 29%;
+    top: 19.2%;
+    left: 50%;
+    /* display: none; */
+    
+}
+#second
+{
+    width: 0.6%;            /*0.6*//*0.6*/
+    height: 33%;
+    top: 15.5%;
+    left: 50.4%;
+}
